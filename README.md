@@ -1,36 +1,34 @@
-# Password-Generator
+# Password Generator 🛠️🔐
 
-This Python code is a password generator program. Here's a step-by-step description of what the code does:
+This Python script generates secure passwords by combining random letters, symbols, and numbers. Customize the length and composition of your password to enhance security.
 
-from os import system: This line imports the system function from the os module. The system function is used to run operating system commands.
+## Features 🚀
 
-import random: This line imports the random module, which is used to generate random numbers and make selections from lists randomly.
+- **Random Generation:** Utilizes Python's `random` library to generate unpredictable passwords.
+- **Customizable:** Choose the number of letters, symbols, and numbers for your password.
+- **Easy to Use:** Simple prompts guide you through the process of creating a strong password.
+- **Secure Combinations:** Combines uppercase and lowercase letters, numbers, and symbols for robust passwords.
 
-Three lists are defined:
+## How to Use 🤖
 
-letters: Contains uppercase and lowercase letters of the alphabet.
-numbers: Contains digits from 0 to 9.
-symbols: Contains a variety of special symbols.
-system('cls'): This line clears the console screen. It's commonly used in Windows systems to clear the command prompt or terminal window.
+1. Run the Python script in your terminal or IDE.
+2. Enter the desired number of letters, symbols, and numbers when prompted.
+3. The script will generate a secure password based on your specifications.
+4. Copy and use the password for your accounts, ensuring better security.
 
-The program prints a welcome message to the user.
+## Example 🎲
 
-It then prompts the user to input the following:
+```plaintext
+Welcome to the Password Generator!
 
-num_letter: The number of letters to include in the password.
-num_symbols: The number of symbols to include in the password.
-num_numbers: The number of numbers to include in the password.
-An empty list password_list is initialized to store the characters of the password.
+How many letters would you like in your password?
+8
 
-Three loops are used to randomly select characters for the password:
+How many symbols would you like?
+3
 
-The first loop adds random letters to password_list according to the user-specified num_letter.
-The second loop adds random symbols to password_list according to the user-specified num_symbols.
-The third loop adds random numbers to password_list according to the user-specified num_numbers.
-After all the characters are added to password_list, the random.shuffle() function is used to shuffle the characters randomly.
+How many numbers would you like?
+2
 
-The shuffled characters in password_list are concatenated together to form the final password, stored in the password variable.
-
-The program prints the generated password to the user.
-
-In summary, this code generates a random password based on user-defined criteria for the number of letters, symbols, and numbers to include in the password. It then displays the generated password to the user.
+Your Password is : a%7EhD2ZiB
+```
